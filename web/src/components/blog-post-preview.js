@@ -14,7 +14,7 @@ function BlogPostPreview(props) {
       className={props.isInList ? styles.inList : styles.inGrid}
       to={getBlogUrl(props.publishedAt, props.slug.current)}
     >
-      <div className={styles.leadMediaThumb}>
+      {/* <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
             src={imageUrlFor(buildImageObj(props.mainImage))
@@ -25,7 +25,7 @@ function BlogPostPreview(props) {
             alt={props.mainImage.alt}
           />
         )}
-      </div>
+      </div> */}
       <div className={styles.text}>
         <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
         {props._rawExcerpt && (
